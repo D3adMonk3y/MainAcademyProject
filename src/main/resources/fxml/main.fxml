@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.Controller">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TabPane tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab fx:id="allTab" text="Усі">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="allTable" prefHeight="506.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idCol" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientCol" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeCol" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelCol" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateCol" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeCol" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentCol" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="acceptedTab" text="Прийняті">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="aceptedTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColA" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColA" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColA" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColA" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColA" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColA" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColA" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="inWorkTab" text="В ремонті">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="inWorkTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColWork" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColWork" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColWork" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColWork" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColWork" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColWork" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColWork" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="waitingTab" text="Уточнення">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="waitingTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColWait" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColWait" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColWait" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColWait" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColWait" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColWait" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColWait" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="waitingForPartsTab" text="Очікування запчастин">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="waitForPartsTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColwfp" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColwfp" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColwfp" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColwfp" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColwfp" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColwfp" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColwfp" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="warantyTab" text="На гарантії">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="warrantyTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColWarranty" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColWarranty" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColWarranty" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColWarranty" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColWarranty" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColWarranty" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColWarranty" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="readyTab" text="Готові">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="readyTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColReady" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColReady" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColReady" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColReady" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColReady" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColReady" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColReady" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="finishedTab" text="Виданні">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="finishedTable" prefHeight="484.0" prefWidth="801.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="idColFin" maxWidth="2000.0" text="id" />
+                                    <TableColumn fx:id="clientColFin" prefWidth="213.0" text="Клієнт" />
+                                    <TableColumn fx:id="typeColFin" prefWidth="94.0" text="Тип" />
+                                    <TableColumn fx:id="modelColFin" prefWidth="151.0" text="Модель" />
+                                    <TableColumn fx:id="dateColFin" prefWidth="118.0" text="Дата прийому" />
+                                    <TableColumn fx:id="employeeColFin" prefWidth="166.0" text="Майстер" />
+                                    <TableColumn fx:id="urgentColFin" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </center>
+         <top>
+            <VBox prefHeight="66.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="25.0" prefWidth="800.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Новий" />
+                              <MenuItem mnemonicParsing="false" text="Відкрити" />
+                              <MenuItem mnemonicParsing="false" text="Зберегти" />
+                              <MenuItem mnemonicParsing="false" text="Налаштування" />
+                              <MenuItem mnemonicParsing="false" text="Вихід" />
+                           </items>
+                        </Menu>
+
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+                  <ToolBar prefHeight="40.0" prefWidth="800.0">
+                     <items>
+                        <Button id="addbtn" fx:id="addbtn" mnemonicParsing="false" onAction="#btn" text="Додати" />
+                        <Button fx:id="findbtn" mnemonicParsing="false" onAction="#findAction" text="Знайти" />
+                        <Button fx:id="clientsbtn" mnemonicParsing="false" onAction="#clientsAction" text="Клієнти" />
+                        <Button fx:id="employeesbtn" mnemonicParsing="false" onAction="#employeesAction" text="Працівники" />
+                        <Button fx:id="reportsbtn" mnemonicParsing="false" onAction="#reportsAction" prefHeight="25.0" prefWidth="62.0" text="Звіти" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <Pane prefHeight="22.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

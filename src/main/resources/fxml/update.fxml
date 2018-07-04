@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.updateController">
+    <children>
+        <GridPane prefHeight="420.0" prefWidth="601.0">
+            <children>
+                <Button id="addWork" fx:id="updateOrder" mnemonicParsing="false" onAction="#updateOrder" text="Зберегти" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="17" />
+                <Label text="Клієнт" />
+                <ComboBox id="manufacturer" fx:id="manufacturerCombo" prefHeight="25.0" prefWidth="201.0" GridPane.rowIndex="7" />
+
+                <ComboBox id="TOT" fx:id="TOTCombo" prefHeight="25.0" prefWidth="199.0" GridPane.rowIndex="5" />
+                <TextField id="serialNumber" fx:id="serialNumberText" GridPane.rowIndex="11" />
+                <Label text="Тип техніки" GridPane.rowIndex="4" />
+                <Label text="Виробник" GridPane.rowIndex="6" />
+                <Label text="Серійний номер" GridPane.rowIndex="10" />
+                <Button id="searchClient" fx:id="addClient" mnemonicParsing="false" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button id="addManufacturer" fx:id="addManufacturer" mnemonicParsing="false" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button id="addTOT" fx:id="addtot" mnemonicParsing="false" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Label text="Майстер" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+                <Label text="Проблема" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+                <Label text="Стан техніки" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+                <CheckBox id="urgent" fx:id="urgentBox" mnemonicParsing="false" text="Срочно" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="17">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></CheckBox>
+
+                <TextArea id="problem" fx:id="problemText" prefHeight="26.0" prefWidth="290.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="3" />
+                <TextArea id="condition" fx:id="conditionText" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+                <ComboBox id="worker" fx:id="employeeCombo" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <Label text="Модель" GridPane.rowIndex="8" />
+                <TextField id="model" fx:id="modelText" GridPane.rowIndex="9" />
+                <ComboBox fx:id="clientCombo" prefWidth="150.0" GridPane.rowIndex="1" />
+            <Label text="Виконана робота" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Статус" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="orderStatusCombo" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+            <TextField fx:id="clientPhone" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <Label text="телефон:" GridPane.rowIndex="2" />
+            <Label text="Ціна" GridPane.halignment="RIGHT" GridPane.rowIndex="17">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="price" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <Label text="Дата прийому:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="dateLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextArea fx:id="workDoneText" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="13" GridPane.rowSpan="3" />
+            <Button mnemonicParsing="false" onAction="#print" text="Друк" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="17" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>

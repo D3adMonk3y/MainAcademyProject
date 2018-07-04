@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.EmployeeController">
+    <children>
+        <TableView fx:id="employeeTable" layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="522.0">
+            <columns>
+            <TableColumn fx:id="employeeRankCol" prefWidth="117.0" text="Ранг" />
+                <TableColumn fx:id="employeeNameCol" prefWidth="153.0" text="Працівник" />
+                <TableColumn fx:id="employeePhoneCol" prefWidth="140.0" text="Телефон" />
+            <TableColumn fx:id="employeeSalaryCol" prefWidth="111.0" text="Зарплата" />
+            </columns>
+        </TableView>
+        <Button fx:id="addClient" layoutX="341.0" layoutY="343.0" mnemonicParsing="false" onAction="#addEmployee" text="Додати" />
+        <Button fx:id="showOrders" layoutX="414.0" layoutY="343.0" mnemonicParsing="false" onAction="#showOrders" text="Показати закази" />
+      <Button layoutX="255.0" layoutY="343.0" mnemonicParsing="false" onAction="#removeEmployee" text="Видалити" />
+    </children>
+</AnchorPane>

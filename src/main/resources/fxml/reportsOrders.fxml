@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.ReportOrdersController">
+    <children>
+        <TableView fx:id="ordersTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="454.0" prefWidth="810.0">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <columns>
+                <TableColumn fx:id="statusCol" prefWidth="75.0" text="Статус" />
+                <TableColumn fx:id="idCol" maxWidth="1500.0" text="id" />
+                <TableColumn fx:id="clientCol" prefWidth="213.0" text="Клієнт" />
+                <TableColumn fx:id="typeCol" prefWidth="94.0" text="Тип" />
+                <TableColumn fx:id="modelCol" prefWidth="151.0" text="Модель" />
+                <TableColumn fx:id="dateCol" prefWidth="118.0" text="Дата прийому" />
+                <TableColumn fx:id="employeeCol" prefWidth="166.0" text="Майстер" />
+                <TableColumn fx:id="urgentCol" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="срочнічть" />
+            </columns>
+        </TableView>
+      <Label fx:id="infoLabel" layoutX="37.0" layoutY="469.0" text="Звіт з 12,05,2018 по 15,05,2018 для Андрусишина Олег  |  Загальна кількість замовлень 25  |   Загальна сума 950 грн" />
+    </children>
+</AnchorPane>

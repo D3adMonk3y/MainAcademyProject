@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.url">jdbc:mysql://35.230.141.108/Orders</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">fgithjy23</property>
+    <mapping class="Entity.ClientsEntity"/>
+      <mapping class="Entity.EmployesEntity"/>
+      <mapping class="Entity.OrdersEntity"/>
+      <mapping class="Entity.StatusEntity"/>
+      <mapping class="Entity.TypeoftecnicsEntity"/>
+      <mapping class="Entity.ManufacturerEntity"/>
+    <mapping class="Entity.LoginEntity"/>
+
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

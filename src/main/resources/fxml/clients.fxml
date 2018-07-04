@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.ClientController">
+   <children>
+      <TableView fx:id="clientsTable" layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="340.0">
+        <columns>
+          <TableColumn fx:id="clientNameCol" prefWidth="165.0" text="Клієнт" />
+          <TableColumn fx:id="clientPhoneCol" prefWidth="174.0" text="Телефон" />
+        </columns>
+      </TableView>
+      <Button fx:id="addClient" layoutX="175.0" layoutY="343.0" mnemonicParsing="false" onAction="#addClient" text="Додати" />
+      <Button fx:id="showOrders" layoutX="247.0" layoutY="343.0" mnemonicParsing="false" onAction="#showOrders" text="Показати закази" />
+      <Button fx:id="removeClientBtn" layoutX="92.0" layoutY="343.0" mnemonicParsing="false" onAction="#removeClient" text="Видалити" />
+   </children>
+</AnchorPane>

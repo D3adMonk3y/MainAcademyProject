@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPkg.AddController">
+   <children>
+      <GridPane prefHeight="420.0" prefWidth="601.0">
+         <children>
+            <Label text="Клієнт" />
+            <ComboBox id="TOT" fx:id="TOTCombo" prefHeight="25.0" prefWidth="199.0" GridPane.rowIndex="3" />
+            <ComboBox id="manufacturer" fx:id="manufacturerCombo" prefHeight="25.0" prefWidth="201.0" GridPane.rowIndex="5" />
+            <TextField id="serialNumber" fx:id="SerialNumberText" GridPane.rowIndex="9" />
+            <Label text="Тип техніки" GridPane.rowIndex="2" />
+            <Label text="Виробник" GridPane.rowIndex="4" />
+            <Label text="Серійний номер" GridPane.rowIndex="8" />
+            <Button id="searchClient" fx:id="addClient" mnemonicParsing="false" onAction="#addClient" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="addManufacturer" fx:id="addManufacturer" mnemonicParsing="false" onAction="#addManufacturer" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="addTOT" fx:id="addtot" mnemonicParsing="false" onAction="#addTOT" text="Додати" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Label text="Майстер" GridPane.columnIndex="2" />
+            <Label text="Проблема" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="Стан" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <CheckBox id="urgent" fx:id="UrgentBox" mnemonicParsing="false" text="Срочно" GridPane.rowIndex="10" />
+            <Button id="addWork" fx:id="addOrder" mnemonicParsing="false" onAction="#addOrder" text="Додати" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+            <TextArea id="problem" fx:id="problemText" prefHeight="53.0" prefWidth="212.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="3" />
+            <TextArea id="condition" fx:id="conditionText" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="3" />
+            <ComboBox id="worker" fx:id="employeeCombo" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Модель" GridPane.rowIndex="6" />
+            <TextField id="model" fx:id="ModelText" GridPane.rowIndex="7" />
+            <ComboBox fx:id="clientCombo" prefWidth="150.0" GridPane.rowIndex="1" />
+
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
